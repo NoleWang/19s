@@ -4,7 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-    testcase.cpp
+    testcase.cpp \
+    main.cpp
 
 HEADERS += \
     catch.h
