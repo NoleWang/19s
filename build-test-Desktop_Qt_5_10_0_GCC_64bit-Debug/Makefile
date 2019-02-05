@@ -215,6 +215,7 @@ DIST          = ../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_post.prf \
+		../test/.qmake.stash \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -228,7 +229,7 @@ DIST          = ../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/exceptions.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/yacc.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/lex.prf \
-		../test/test.pro  ../test/main.cpp
+		../test/test.pro catch.h ../test/main.cpp
 QMAKE_TARGET  = test
 DESTDIR       = 
 TARGET        = test
@@ -403,6 +404,7 @@ Makefile: ../test/test.pro ../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.con
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../Qt/5.10.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -581,6 +583,7 @@ Makefile: ../test/test.pro ../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.con
 ../../../Qt/5.10.0/gcc_64/mkspecs/features/qt_config.prf:
 ../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Qt/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt/5.10.0/gcc_64/mkspecs/features/toolchain.prf:
 ../../../Qt/5.10.0/gcc_64/mkspecs/features/default_pre.prf:
